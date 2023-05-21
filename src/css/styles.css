@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #050000c3;
+  color: #ffffff;
+  line-height: 1.5; 
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.photo-card {
+  width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 5px 5px 0px rgb(247, 242, 242);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.info{
+  padding: 0px 10px 13px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;}
+  
+  .info-item {
+    font-size: 13px;
+    margin: 0;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #bdd1d5;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #050000c3;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+
+  search-form input:focus {
+    outline: none;
+  }
+  
+  button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    color: #050000c3;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+    
+  button:focus,
+  button:hover {
+    outline: none;
+    background-color: #050000c3;
+    color: #ffffff;
+  }
+
+  .load-more {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    }
+
+    .load-more.hidden{
+      display: none;
+    }
+    
+    .load-more:disabled {
+      background-color: #ffffff;
+      cursor: not-allowed;
+      color: initial;
+    }
+
+  .load-more:disabled:hover,
+  .load-more:disabled:focus {
+    background-color: #ffffff;
+    color: initial;
+    outline: none;
+    box-shadow: none;
+  }
